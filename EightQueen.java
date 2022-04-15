@@ -45,7 +45,7 @@ public class EightQueen {
     private int fitness(int[] sequence) {
         int score = 1;  //base score of 1 to prevent divide by zero error
         
-        for(int row=0; row<sequence.length; row++) {
+        for (int row=0; row<sequence.length; row++) {
             int col = sequence[row];
             for(int i=0; i<sequence.length; i++) {
                 if(i==row) continue;    //exclude self
